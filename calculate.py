@@ -72,7 +72,7 @@ def insurance():
 	elif accidents > 5:
 		raise Exception("Due to simulation reasons, the calculator will not accept drivers with over than 5 accidents, and neither will some insurance companies.")
 
-	violations = int(input("\nEnter the number of speeding vioaltions you have received: "))
+	violations = int(input("\nEnter the number of speeding violations you have received: "))
 
 	if violations == 0:
 		rate = rate - 15
@@ -185,6 +185,7 @@ def insurance():
 		print("\nGet peace of mind with Full-Coverage insurance! It could cost $%d per month.\n" % round(rate * 2.15, 2))
 	elif coverage == 2:
 		print("\nDowngrading to liability could cost $%s per month.\n" % round(rate / 2.15, 2))
+		
 	input("\nPress ENTER to exit.")
 
 insurance()
