@@ -177,14 +177,14 @@ def insurance():
 	for x in discounts:
 		print("-" + x)
 	if accidents > 0:
-		print("\nRemoving the %d accident(s) on your record could save you up to $%s!" % (accidents, accidents * 15))
+		print("\nRemoving the %d accident(s) on your record could save you up to $%d per month or $%d per year!" % (accidents, accidents * 15, accidents * 15 * 12))
 
-	print("\nYour estimated insurnace cost is $%s per month." % (round(rate, 2)))
+	print("\nYour estimated insurnace cost is $%d per month." % (round(rate, 2)))
 
 	if coverage == 1:
-		print("\nGet peace of mind with Full-Coverage insurance! It could cost $%d per month.\n" % round(rate * 2.15, 2))
+		print("\nGet peace of mind with Full-Coverage insurance! It could potentially cost $%d per month.\n" % round(rate * 2.15, 2))
 	elif coverage == 2:
-		print("\nDowngrading to liability could cost $%s per month.\n" % round(rate / 2.15, 2))
+		print("\nDowngrading to liability could cost $%d per month.\n" % round(rate / 2.15, 2))
 		
 	input("\nPress ENTER to exit.")
 
