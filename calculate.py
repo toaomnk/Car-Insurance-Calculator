@@ -1,4 +1,4 @@
-def insurance(age, gender, vehicle, coverage, student, accidents, violations, background, credit):
+def insurance():
 
 	print("\nThe following calculator will estimate the cost to insure you based on calculating risk. \n")
 	print("There are various factors on which your insurance cost will be affected. Many insurance companies also offer a wide-variety of discounts.")
@@ -185,5 +185,6 @@ def insurance(age, gender, vehicle, coverage, student, accidents, violations, ba
 		print("\nGet peace of mind with Full-Coverage insurance! It could cost $%d per month.\n" % round(rate * 2.15, 2))
 	elif coverage == 2:
 		print("\nDowngrading to liability could cost $%s per month.\n" % round(rate / 2.15, 2))
+	input("\nPress ENTER to exit.")
 
-insurance(20, 1, 1, 1, 1, 1, 1, 1, 1)
+insurance()
